@@ -20,7 +20,7 @@ public class BinarySearchTree<Type extends Comparable<? super Type>> implements 
 }
 
 private Node root;
-private int Size;
+private int size;
 private Comparator<? super Type> comparator;
 
 /**
