@@ -57,7 +57,7 @@ private int compare(Type first, Type second) {
   * Returns smallest element
   */
 @Override
-public type min() {
+public Type min() {
   if (root == null) {
     throw new NoSuchElementException("Tree Empty!");
   }
@@ -188,7 +188,7 @@ public boolean addAll(Collection<? extends Type> items) {
   */
 @Override
 public boolean contains(Type element) {
-  if (elment == null) {
+  if (element == null) {
     return false;
   }
 
@@ -256,7 +256,9 @@ private Node removeHelper(Node current, Type element, boolean[] removed) {
     return null;
   }
 
-  int (comparison < 0) {
+  int comparison = compare(element, current.data);
+
+  if (comparison < 0) {
     current.left = removeHelper(current.left, element, removed);
   } else if (comparison > 0) {
     current.right = removeHelper(current.right, element, removed);
