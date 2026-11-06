@@ -5,8 +5,6 @@ import java.util.Collection;
 import java.util.Comparator;
 import java.util.NoSuchElementException;
 
-import assign03.SortedList;
-
 public class ArraySortedSet<Type extends Comparable<? super Type>> implements SortedSet<Type>{
 	private Object[] elements;
     private int size;
